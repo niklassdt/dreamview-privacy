@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamView – Datenschutzerklärung</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #050814;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            padding: 48px 24px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #A78BFA, #4169E1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: rgba(255,255,255,0.4);
+            font-size: 0.9rem;
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #A78BFA;
+            margin-top: 36px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: rgba(255,255,255,0.75);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            color: rgba(255,255,255,0.75);
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+        }
+
+        .contact {
+            margin-top: 48px;
+            padding: 20px;
+            background: #101528;
+            border-radius: 12px;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #A78BFA;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            margin: 36px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Datenschutzerklärung</h1>
+    <p class="subtitle">DreamView · Zuletzt aktualisiert: März 2026</p>
+
+    <p>Der Schutz deiner Daten ist mir wichtig. Diese Datenschutzerklärung erklärt, welche Daten DreamView erhebt, wie sie verwendet werden und welche Rechte du hast.</p>
+
+    <h2>1. Verantwortlicher</h2>
+    <p>
+        Niklas Schadt<br>
+        E-Mail: <a href="mailto:niklas.schadt@web.de">niklas.schadt@web.de</a>
+    </p>
+
+    <h2>2. Welche Daten werden gespeichert?</h2>
+    <p>DreamView speichert ausschließlich Daten lokal auf deinem Gerät. Es werden keine Daten an externe Server übertragen. Gespeichert werden:</p>
+    <ul>
+        <li>Deine Traumeinträge (Titel, Beschreibung, Typ, Stimmung, Tags, Datum)</li>
+        <li>App-Einstellungen (z. B. aktivierte Home-Bereiche)</li>
+        <li>Onboarding-Antworten (Ziele, Erfahrungslevel)</li>
+        <li>Benachrichtigungseinstellungen</li>
+    </ul>
+    <p>All diese Daten verlassen dein Gerät zu keinem Zeitpunkt.</p>
+
+    <h2>3. Keine Weitergabe an Dritte</h2>
+    <p>DreamView gibt keinerlei Daten an Dritte weiter. Es werden keine Analyse-Tools, Werbenetzwerke oder externen Dienste eingebunden.</p>
+
+    <h2>4. Benachrichtigungen</h2>
+    <p>Wenn du Benachrichtigungen aktivierst, werden diese lokal auf deinem Gerät geplant. Es erfolgt keine Kommunikation mit externen Servern. Du kannst Benachrichtigungen jederzeit in den iOS-Einstellungen deaktivieren.</p>
+
+    <h2>5. Datenlöschung</h2>
+    <p>Du kannst alle gespeicherten Daten jederzeit direkt in der App unter <strong>Menü → Daten → Alle Träume löschen</strong> entfernen. Eine vollständige Löschung aller App-Daten ist auch durch Deinstallation der App möglich.</p>
+
+    <h2>6. Kinder</h2>
+    <p>DreamView richtet sich nicht gezielt an Kinder unter 13 Jahren. Es werden keinerlei personenbezogene Daten erhoben.</p>
+
+    <h2>7. Änderungen dieser Erklärung</h2>
+    <p>Sollte sich die Funktionsweise der App grundlegend ändern, wird diese Datenschutzerklärung entsprechend aktualisiert. Das Datum der letzten Aktualisierung ist oben angegeben.</p>
+
+    <hr>
+
+    <div class="contact">
+        <strong>Kontakt</strong><br>
+        Bei Fragen zum Datenschutz erreichst du mich unter:<br>
+        <a href="mailto:dreamview.app.contact@gmail.com">dreamview.app.contact@gmail.com</a>
+    </div>
