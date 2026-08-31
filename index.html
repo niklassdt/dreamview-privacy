@@ -27,12 +27,20 @@
             margin-bottom: 8px;
             background: linear-gradient(135deg, #A78BFA, #4169E1);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
+            color: #A78BFA;
         }
 
         .subtitle {
             color: rgba(255,255,255,0.4);
             font-size: 0.9rem;
+            margin-bottom: 32px;
+        }
+
+        .lead {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.05rem;
             margin-bottom: 48px;
         }
 
@@ -57,6 +65,20 @@
 
         ul li {
             margin-bottom: 6px;
+        }
+
+        /* Die beiden Punkte, die gegen die App sprechen, statt für sie.
+           Sie stehen bewusst nicht im Kleingedruckten. */
+        .caveat {
+            margin-top: 12px;
+            padding: 16px 20px;
+            background: #101528;
+            border-left: 2px solid #A78BFA;
+            border-radius: 8px;
+        }
+
+        .caveat p:last-child {
+            margin-bottom: 0;
         }
 
         .contact {
@@ -87,9 +109,9 @@
 <body>
 
     <h1>Datenschutzerklärung</h1>
-    <p class="subtitle">DreamView · Zuletzt aktualisiert: März 2026</p>
+    <p class="subtitle">DreamView · Stand: August 2026</p>
 
-    <p>Der Schutz deiner Daten ist mir wichtig. Diese Datenschutzerklärung erklärt, welche Daten DreamView erhebt, wie sie verwendet werden und welche Rechte du hast.</p>
+    <p class="lead">Deine Träume bleiben auf diesem Gerät. Sie werden nicht hochgeladen, nicht ausgewertet, und niemand außer dir hat Zugriff darauf.</p>
 
     <h2>1. Verantwortlicher</h2>
     <p>
@@ -97,30 +119,44 @@
         E-Mail: <a href="mailto:dreamview.app.contact@gmail.com">dreamview.app.contact@gmail.com</a>
     </p>
 
-    <h2>2. Welche Daten werden gespeichert?</h2>
-    <p>DreamView speichert ausschließlich Daten lokal auf deinem Gerät. Es werden keine Daten an externe Server übertragen. Gespeichert werden:</p>
+    <h2>2. Was gespeichert wird</h2>
+    <p>Deine Träume mit Titel, Text, Datum, Stimmung, Typ, Tags und Traumzeichen. Dazu deine Notizen, deine Einstellungen und die Angaben aus dem Onboarding.</p>
+
+    <h2>3. Wo die Daten liegen</h2>
+    <p>Ausschließlich auf diesem Gerät, im geschützten Speicherbereich der App. Es gibt keinen Server, kein Konto und keine Anmeldung.</p>
+
+    <h2>4. Was nicht passiert</h2>
     <ul>
-        <li>Deine Traumeinträge (Titel, Beschreibung, Typ, Stimmung, Tags, Datum)</li>
-        <li>App-Einstellungen (z. B. aktivierte Home-Bereiche)</li>
-        <li>Onboarding-Antworten (Ziele, Erfahrungslevel)</li>
-        <li>Benachrichtigungseinstellungen</li>
+        <li>Nichts wird ins Internet übertragen.</li>
+        <li>Keine Analyse, kein Tracking, keine Werbekennungen.</li>
+        <li>Keine Weitergabe an Dritte – auch nicht an den Entwickler.</li>
+        <li>Die App enthält keine Bibliotheken von Drittanbietern.</li>
     </ul>
-    <p>All diese Daten verlassen dein Gerät zu keinem Zeitpunkt.</p>
 
-    <h2>3. Keine Weitergabe an Dritte</h2>
-    <p>DreamView gibt keinerlei Daten an Dritte weiter. Es werden keine Analyse-Tools, Werbenetzwerke oder externen Dienste eingebunden.</p>
+    <h2>5. Benachrichtigungen</h2>
+    <p>Die Morgen-Erinnerung und die Reality Checks werden lokal auf dem Gerät geplant. Dafür wird nichts versendet, und es ist kein Push-Dienst beteiligt. Du kannst Benachrichtigungen jederzeit in den iOS-Einstellungen widerrufen.</p>
 
-    <h2>4. Benachrichtigungen</h2>
-    <p>Wenn du Benachrichtigungen aktivierst, werden diese lokal auf deinem Gerät geplant. Es erfolgt keine Kommunikation mit externen Servern. Du kannst Benachrichtigungen jederzeit in den iOS-Einstellungen deaktivieren.</p>
+    <h2>6. Gut zu wissen</h2>
+    <p>Ohne diese beiden Punkte wäre „niemand hat Zugriff“ zu bequem formuliert. Beides gehört zur Wahrheit dazu:</p>
+    <div class="caveat">
+        <p>Sicherst du dein iPhone über iCloud oder einen Mac, sind die Traumdaten Teil dieser Sicherung.</p>
+        <p>Wer dein entsperrtes iPhone in der Hand hat, kann DreamView öffnen. Einen eigenen Code für die App gibt es derzeit nicht.</p>
+    </div>
 
-    <h2>5. Datenlöschung</h2>
-    <p>Du kannst alle gespeicherten Daten jederzeit direkt in der App unter <strong>Menü → Daten → Alle Träume löschen</strong> entfernen. Eine vollständige Löschung aller App-Daten ist auch durch Deinstallation der App möglich.</p>
+    <h2>7. Sicherungen</h2>
+    <p>Du kannst jederzeit eine Sicherung exportieren (<strong>Menü → Daten → Sicherung exportieren</strong>, wahlweise auch als Textfassung). Die Datei enthält deine Träume im Klartext, und wohin sie geht, entscheidest du. Liegt sie erst bei einem anderen Dienst – iCloud Drive, eine Messenger-App, ein fremder Rechner –, gelten dessen Bedingungen und nicht mehr diese Erklärung.</p>
 
-    <h2>6. Kinder</h2>
-    <p>DreamView richtet sich nicht gezielt an Kinder unter 13 Jahren. Es werden keinerlei personenbezogene Daten erhoben.</p>
+    <h2>8. Löschen</h2>
+    <p>Im Menü unter <strong>Daten → Alle Daten löschen</strong> löschst du alle Träume unwiderruflich. Entfernst du die App, verschwinden alle Daten mit ihr. Exportierte Sicherungen liegen außerhalb der App und musst du selbst löschen.</p>
 
-    <h2>7. Änderungen dieser Erklärung</h2>
-    <p>Sollte sich die Funktionsweise der App grundlegend ändern, wird diese Datenschutzerklärung entsprechend aktualisiert. Das Datum der letzten Aktualisierung ist oben angegeben.</p>
+    <h2>9. Kinder</h2>
+    <p>DreamView richtet sich nicht gezielt an Kinder unter 13 Jahren. Es werden keine personenbezogenen Daten erhoben oder übermittelt.</p>
+
+    <h2>10. Deine Rechte</h2>
+    <p>Da keine Daten an mich oder an Dritte übermittelt werden, liegen mir keine personenbezogenen Daten von dir vor. Auskunft, Berichtigung und Löschung nach Art. 15 bis 17 DSGVO hast du unmittelbar in der App selbst – deine Daten liegen ausschließlich in deiner Hand. Für Beschwerden bleibt der Weg zu einer Datenschutz-Aufsichtsbehörde offen.</p>
+
+    <h2>11. Änderungen dieser Erklärung</h2>
+    <p>Ändert sich die Funktionsweise der App grundlegend, wird diese Erklärung entsprechend aktualisiert. Das Datum der letzten Aktualisierung steht oben.</p>
 
     <hr>
 
@@ -129,3 +165,6 @@
         Bei Fragen zum Datenschutz erreichst du mich unter:<br>
         <a href="mailto:dreamview.app.contact@gmail.com">dreamview.app.contact@gmail.com</a>
     </div>
+
+</body>
+</html>
