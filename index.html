@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DreamView – Datenschutzerklärung</title>
+    <title>DreamView – Datenschutzerklärung / Privacy Policy</title>
     <style>
         * {
             margin: 0;
@@ -104,67 +104,219 @@
             border-top: 1px solid rgba(255,255,255,0.08);
             margin: 36px 0;
         }
+
+        /* Sprachumschalter. Beide Fassungen stehen im selben Dokument, damit sie
+           nicht auseinanderlaufen können – es gibt nur eine URL zu pflegen. */
+        .langswitch {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 28px;
+            padding: 4px;
+            background: #101528;
+            border-radius: 999px;
+            width: fit-content;
+        }
+
+        .langswitch button {
+            appearance: none;
+            border: none;
+            cursor: pointer;
+            font: inherit;
+            font-size: 0.9rem;
+            padding: 6px 18px;
+            border-radius: 999px;
+            background: transparent;
+            color: rgba(255,255,255,0.55);
+            transition: background .2s, color .2s;
+        }
+
+        .langswitch button:hover {
+            color: #ffffff;
+        }
+
+        .langswitch button[aria-selected="true"] {
+            background: #A78BFA;
+            color: #050814;
+            font-weight: 600;
+        }
+
+        /* Ohne JavaScript sind beide Sprachen sichtbar und lesbar –
+           die Erklärung darf an einem Skript nicht scheitern. */
+        [hidden] { display: none; }
+
+        .langdivider {
+            margin: 56px 0 0;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Datenschutzerklärung</h1>
-    <p class="subtitle">DreamView · Stand: August 2026</p>
-
-    <p class="lead">Deine Träume bleiben auf diesem Gerät. Sie werden nicht hochgeladen, nicht ausgewertet, und niemand außer dir hat Zugriff darauf.</p>
-
-    <h2>1. Verantwortlicher</h2>
-    <p>
-        Niklas Schadt<br>
-        E-Mail: <a href="mailto:dreamview.app.contact@gmail.com">dreamview.app.contact@gmail.com</a>
-    </p>
-
-    <h2>2. Was gespeichert wird</h2>
-    <p>Deine Träume mit Titel, Text, Datum, Stimmung, Typ, Tags und Traumzeichen. Dazu deine Notizen, deine Einstellungen und die Angaben aus dem Onboarding.</p>
-
-    <h2>3. Wo die Daten liegen</h2>
-    <p>Ausschließlich auf diesem Gerät, im geschützten Speicherbereich der App. Es gibt keinen Server, kein Konto und keine Anmeldung.</p>
-
-    <h2>4. Was nicht passiert</h2>
-    <ul>
-        <li>Nichts wird ins Internet übertragen.</li>
-        <li>Keine Analyse, kein Tracking, keine Werbekennungen.</li>
-        <li>Keine Weitergabe an Dritte – auch nicht an den Entwickler.</li>
-        <li>Die App enthält keine Bibliotheken von Drittanbietern.</li>
-    </ul>
-
-    <h2>5. Benachrichtigungen</h2>
-    <p>Die Morgen-Erinnerung und die Reality Checks werden lokal auf dem Gerät geplant. Dafür wird nichts versendet, und es ist kein Push-Dienst beteiligt. Du kannst Benachrichtigungen jederzeit in den iOS-Einstellungen widerrufen.</p>
-
-    <h2>6. Gut zu wissen</h2>
-    <p>Ohne diese beiden Punkte wäre „niemand hat Zugriff“ zu bequem formuliert. Beides gehört zur Wahrheit dazu:</p>
-    <div class="caveat">
-        <p>Sicherst du dein iPhone über iCloud oder einen Mac, sind die Traumdaten Teil dieser Sicherung.</p>
-        <p>Wer dein entsperrtes iPhone in der Hand hat, kann DreamView öffnen. Einen eigenen Code für die App gibt es derzeit nicht.</p>
+    <div class="langswitch" role="tablist" aria-label="Sprache / Language">
+        <button type="button" id="tab-de" role="tab" aria-controls="doc-de" aria-selected="true">Deutsch</button>
+        <button type="button" id="tab-en" role="tab" aria-controls="doc-en" aria-selected="false">English</button>
     </div>
 
-    <h2>7. Sicherungen</h2>
-    <p>Du kannst jederzeit eine Sicherung exportieren (<strong>Menü → Daten → Sicherung exportieren</strong>, wahlweise auch als Textfassung). Die Datei enthält deine Träume im Klartext, und wohin sie geht, entscheidest du. Liegt sie erst bei einem anderen Dienst – iCloud Drive, eine Messenger-App, ein fremder Rechner –, gelten dessen Bedingungen und nicht mehr diese Erklärung.</p>
+    <section id="doc-de" role="tabpanel" aria-labelledby="tab-de" lang="de">
 
-    <h2>8. Löschen</h2>
-    <p>Im Menü unter <strong>Daten → Alle Daten löschen</strong> löschst du alle Träume unwiderruflich. Entfernst du die App, verschwinden alle Daten mit ihr. Exportierte Sicherungen liegen außerhalb der App und musst du selbst löschen.</p>
+        <h1>Datenschutzerklärung</h1>
+        <p class="subtitle">DreamView · Stand: August 2026</p>
 
-    <h2>9. Kinder</h2>
-    <p>DreamView richtet sich nicht gezielt an Kinder unter 13 Jahren. Es werden keine personenbezogenen Daten erhoben oder übermittelt.</p>
+        <p class="lead">Deine Träume bleiben auf diesem Gerät. Sie werden nicht hochgeladen, nicht ausgewertet, und niemand außer dir hat Zugriff darauf.</p>
 
-    <h2>10. Deine Rechte</h2>
-    <p>Da keine Daten an mich oder an Dritte übermittelt werden, liegen mir keine personenbezogenen Daten von dir vor. Auskunft, Berichtigung und Löschung nach Art. 15 bis 17 DSGVO hast du unmittelbar in der App selbst – deine Daten liegen ausschließlich in deiner Hand. Für Beschwerden bleibt der Weg zu einer Datenschutz-Aufsichtsbehörde offen.</p>
+        <h2>1. Verantwortlicher</h2>
+        <p>
+            Niklas Schadt<br>
+            E-Mail: <a href="mailto:dreamview.app.contact@gmail.com">dreamview.app.contact@gmail.com</a>
+        </p>
 
-    <h2>11. Änderungen dieser Erklärung</h2>
-    <p>Ändert sich die Funktionsweise der App grundlegend, wird diese Erklärung entsprechend aktualisiert. Das Datum der letzten Aktualisierung steht oben.</p>
+        <h2>2. Was gespeichert wird</h2>
+        <p>Deine Träume mit Titel, Text, Datum, Stimmung, Typ, Tags und Traumzeichen. Dazu deine Notizen, deine Einstellungen und die Angaben aus dem Onboarding.</p>
 
-    <hr>
+        <h2>3. Wo die Daten liegen</h2>
+        <p>Ausschließlich auf diesem Gerät, im geschützten Speicherbereich der App. Es gibt keinen Server, kein Konto und keine Anmeldung.</p>
 
-    <div class="contact">
-        <strong>Kontakt</strong><br>
-        Bei Fragen zum Datenschutz erreichst du mich unter:<br>
-        <a href="mailto:dreamview.app.contact@gmail.com">dreamview.app.contact@gmail.com</a>
-    </div>
+        <h2>4. Was nicht passiert</h2>
+        <ul>
+            <li>Nichts wird ins Internet übertragen.</li>
+            <li>Keine Analyse, kein Tracking, keine Werbekennungen.</li>
+            <li>Keine Weitergabe an Dritte – auch nicht an den Entwickler.</li>
+            <li>Die App enthält keine Bibliotheken von Drittanbietern.</li>
+        </ul>
+
+        <h2>5. Benachrichtigungen</h2>
+        <p>Die Morgen-Erinnerung und die Reality Checks werden lokal auf dem Gerät geplant. Dafür wird nichts versendet, und es ist kein Push-Dienst beteiligt. Du kannst Benachrichtigungen jederzeit in den iOS-Einstellungen widerrufen.</p>
+
+        <h2>6. Gut zu wissen</h2>
+        <p>Ohne diese beiden Punkte wäre „niemand hat Zugriff“ zu bequem formuliert. Beides gehört zur Wahrheit dazu:</p>
+        <div class="caveat">
+            <p>Sicherst du dein iPhone über iCloud oder einen Mac, sind die Traumdaten Teil dieser Sicherung.</p>
+            <p>Wer dein entsperrtes iPhone in der Hand hat, kann DreamView öffnen. Einen eigenen Code für die App gibt es derzeit nicht.</p>
+        </div>
+
+        <h2>7. Sicherungen</h2>
+        <p>Du kannst jederzeit eine Sicherung exportieren (<strong>Menü → Daten → Sicherung exportieren</strong>, wahlweise auch als Textfassung). Die Datei enthält deine Träume im Klartext, und wohin sie geht, entscheidest du. Liegt sie erst bei einem anderen Dienst – iCloud Drive, eine Messenger-App, ein fremder Rechner –, gelten dessen Bedingungen und nicht mehr diese Erklärung.</p>
+
+        <h2>8. Löschen</h2>
+        <p>Im Menü unter <strong>Daten → Alle Daten löschen</strong> löschst du alle Träume unwiderruflich. Entfernst du die App, verschwinden alle Daten mit ihr. Exportierte Sicherungen liegen außerhalb der App und musst du selbst löschen.</p>
+
+        <h2>9. Kinder</h2>
+        <p>DreamView richtet sich nicht gezielt an Kinder unter 13 Jahren. Es werden keine personenbezogenen Daten erhoben oder übermittelt.</p>
+
+        <h2>10. Deine Rechte</h2>
+        <p>Da keine Daten an mich oder an Dritte übermittelt werden, liegen mir keine personenbezogenen Daten von dir vor. Auskunft, Berichtigung und Löschung nach Art. 15 bis 17 DSGVO hast du unmittelbar in der App selbst – deine Daten liegen ausschließlich in deiner Hand. Für Beschwerden bleibt der Weg zu einer Datenschutz-Aufsichtsbehörde offen.</p>
+
+        <h2>11. Änderungen dieser Erklärung</h2>
+        <p>Ändert sich die Funktionsweise der App grundlegend, wird diese Erklärung entsprechend aktualisiert. Das Datum der letzten Aktualisierung steht oben.</p>
+
+        <hr>
+
+        <div class="contact">
+            <strong>Kontakt</strong><br>
+            Bei Fragen zum Datenschutz erreichst du mich unter:<br>
+            <a href="mailto:dreamview.app.contact@gmail.com">dreamview.app.contact@gmail.com</a>
+        </div>
+
+    </section>
+
+    <hr class="langdivider" id="nojs-divider">
+
+    <section id="doc-en" role="tabpanel" aria-labelledby="tab-en" lang="en">
+
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">DreamView · Last updated: August 2026</p>
+
+        <p class="lead">Your dreams stay on this device. They are never uploaded, never analysed, and nobody but you has access to them.</p>
+
+        <h2>1. Controller</h2>
+        <p>
+            Niklas Schadt<br>
+            Email: <a href="mailto:dreamview.app.contact@gmail.com">dreamview.app.contact@gmail.com</a>
+        </p>
+
+        <h2>2. What is stored</h2>
+        <p>Your dreams with title, text, date, mood, type, tags and dream signs. Plus your notes, your settings and the answers you gave during onboarding.</p>
+
+        <h2>3. Where the data lives</h2>
+        <p>Exclusively on this device, in the app’s protected storage area. There is no server, no account and no sign-in.</p>
+
+        <h2>4. What never happens</h2>
+        <ul>
+            <li>Nothing is transmitted over the internet.</li>
+            <li>No analytics, no tracking, no advertising identifiers.</li>
+            <li>Nothing is passed on to third parties – not even to the developer.</li>
+            <li>The app contains no third-party libraries.</li>
+        </ul>
+
+        <h2>5. Notifications</h2>
+        <p>The morning reminder and the reality checks are scheduled locally on the device. Nothing is sent anywhere and no push service is involved. You can revoke notifications at any time in the iOS settings.</p>
+
+        <h2>6. Worth knowing</h2>
+        <p>Without these two points, “nobody has access” would be too comfortable a claim. Both belong to the truth:</p>
+        <div class="caveat">
+            <p>If you back up your iPhone via iCloud or a Mac, your dream data is part of that backup.</p>
+            <p>Anyone holding your unlocked iPhone can open DreamView. There is currently no separate passcode for the app.</p>
+        </div>
+
+        <h2>7. Backups</h2>
+        <p>You can export a backup at any time (<strong>Menu → Data → Export backup</strong>, optionally as a plain text version). The file contains your dreams in plain text, and you decide where it goes. Once it is stored with another service – iCloud Drive, a messaging app, someone else’s computer – that service’s terms apply, and no longer this policy.</p>
+
+        <h2>8. Deleting</h2>
+        <p>Under <strong>Data → Delete all data</strong> in the menu you can delete all dreams irreversibly. If you remove the app, all data goes with it. Exported backups live outside the app and you have to delete them yourself.</p>
+
+        <h2>9. Children</h2>
+        <p>DreamView is not directed at children under 13. No personal data is collected or transmitted.</p>
+
+        <h2>10. Your rights</h2>
+        <p>Since no data is transmitted to me or to any third party, I hold no personal data about you. Access, rectification and erasure under Articles 15 to 17 GDPR are available to you directly in the app – your data is exclusively in your own hands. You remain free to lodge a complaint with a data protection supervisory authority.</p>
+
+        <h2>11. Changes to this policy</h2>
+        <p>If the way the app works changes fundamentally, this policy will be updated accordingly. The date of the last update is shown above.</p>
+
+        <hr>
+
+        <div class="contact">
+            <strong>Contact</strong><br>
+            For questions about privacy you can reach me at:<br>
+            <a href="mailto:dreamview.app.contact@gmail.com">dreamview.app.contact@gmail.com</a>
+        </div>
+
+    </section>
+
+    <script>
+        // Ohne Skript stehen beide Fassungen untereinander – lesbar bleibt es
+        // in jedem Fall. Erst hier wird daraus ein Umschalter.
+        (function () {
+            var tabs = { de: document.getElementById('tab-de'), en: document.getElementById('tab-en') };
+            var docs = { de: document.getElementById('doc-de'), en: document.getElementById('doc-en') };
+            var divider = document.getElementById('nojs-divider');
+            divider.hidden = true;
+
+            function show(lang) {
+                var other = lang === 'de' ? 'en' : 'de';
+                docs[lang].hidden = false;
+                docs[other].hidden = true;
+                tabs[lang].setAttribute('aria-selected', 'true');
+                tabs[other].setAttribute('aria-selected', 'false');
+                document.documentElement.lang = lang;
+                document.title = lang === 'de'
+                    ? 'DreamView – Datenschutzerklärung'
+                    : 'DreamView – Privacy Policy';
+                if (history.replaceState) {
+                    history.replaceState(null, '', lang === 'de' ? location.pathname : '#en');
+                }
+            }
+
+            tabs.de.addEventListener('click', function () { show('de'); });
+            tabs.en.addEventListener('click', function () { show('en'); });
+
+            // Sprache des Browsers entscheidet, was zuerst steht – #de und #en
+            // in der Adresse überschreiben das, damit man gezielt verlinken kann.
+            var wanted = location.hash === '#en' ? 'en'
+                       : location.hash === '#de' ? 'de'
+                       : (navigator.language || 'de').toLowerCase().indexOf('de') === 0 ? 'de' : 'en';
+            show(wanted);
+        })();
+    </script>
 
 </body>
 </html>
